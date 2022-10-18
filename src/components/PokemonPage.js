@@ -9,6 +9,7 @@ const pokemonDataUrl = "http://localhost:3001/pokemon"
 function PokemonPage() {
 
   const [pokemonData, setPokemonData] = useState([])
+  const [searchTerm, setSearchTerm] = useState("")
 
   useEffect(() => {
     fetch(pokemonDataUrl)
@@ -22,9 +23,9 @@ function PokemonPage() {
       <br />
       <PokemonForm />
       <br />
-      <Search />
+      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
       <br />
-      <PokemonCollection pokemonData={pokemonData}/>
+      <PokemonCollection searchTerm={searchTerm} pokemonData={pokemonData}/>
     </Container>
   );
 }
