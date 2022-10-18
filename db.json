@@ -1394,6 +1394,15 @@
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/11.png"
       },
       "id": 156
+    },
+    {
+      "name": "Emily",
+      "hp": "10000",
+      "sprites": {
+        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
+        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/199.png"
+      },
+      "id": 157
     }
   ]
 }

@@ -3,9 +3,8 @@ import PokemonCard from "./PokemonCard";
 import { Card } from "semantic-ui-react";
 
 function PokemonCollection({pokemonData, searchTerm}) {
-  console.log("pokemoncollection", searchTerm)
   const pokemonSearched = pokemonData.filter(poke => {
-    return poke.name.includes(searchTerm)
+    return poke.name.toLowerCase().includes(searchTerm.toLowerCase())
   })
 
   return (
